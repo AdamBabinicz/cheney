@@ -10,6 +10,15 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight:300;	/*also loaded 600 for bold*/
 }
+/*COLOR BAR*/
+#colorbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 44px;
+    background-color: #e61b10;
+    width: 100%;
+}
 
 
 /*-----HEADER -----*/

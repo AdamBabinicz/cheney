@@ -27,7 +27,7 @@
 <link href="stylesheets/tablet.css" rel="stylesheet">
 <!-- enhance-desktop -->
 <link href="stylesheets/desktop.css" rel="stylesheet">
-
+<link href="stylesheets/mobilemenu.css" rel="stylesheet">
 
 
 <!--[if lt IE 9]>
@@ -39,6 +39,7 @@
      
 </head>
 <body>
+    <div id="colorbar"></div> 
 
 
 <div id="headerWrapper">
@@ -52,7 +53,7 @@
 	
 </header>
 </div><!-- end of header wrapper -->  
-    
+  
     
     
     
@@ -61,9 +62,9 @@
 	
 <div id="navWrapper">
 <nav>
-    <ul class="clearfix">
+    <ul class="clearfix primary-nav">
         <li class="active"><a href="index.html">SPECIALS</a></li>
-        <li><a href="flavors.html">FLAVORS</a>
+        <li class="parent"><a href="flavors.html">FLAVORS</a>
         <ul>
             <li><a href="flavor.html#straw">Strawberry</a></li>
             <li><a href="flavor.html#orange">Orange</a></li>
@@ -73,10 +74,11 @@
         <li><a href="schedule.html">SCHEDULE A PARTY</a></li>
         <li><a href="store.html">CONTACT US</a></li>
     </ul>
+    <button class="nav-button">Toggle Button</button>
 </nav>
 </div><!-- end of navigation wrapper --> 
     
-
+ 
     
     
  
@@ -113,7 +115,14 @@
     </footer>
 </div><!-- end of footer wrapper -->  
 
-       
+  <script>
+	$(document).ready(function(){
+		$(".nav-button").click(function () {
+		$(".nav-button,.primary-nav").toggleClass("open");
+		});    
+	});
+</script>
+     
  
 </body>
 </html>
