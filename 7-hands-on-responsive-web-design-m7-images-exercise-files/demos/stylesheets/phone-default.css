@@ -143,19 +143,24 @@ nav ul li:last-child a {
 }
 
 /*PHOTO STYLING*/
-figure.col4 {
-    width: 48%;
-    margin-left: 2%;
-    float: right;
+
+figure.col4,
+figure.col6 {
+	width: 48%;
+	margin-left: 2%;
+	float: right;
 }
+
 figcaption {
-    text-align: center;
-    font-size: .8em;
-    padding: .3em 0;
-    
+	text-align: center;
+	font-size: .8em;
+	padding: .3em 0;
+
 }
-figure.col4 img {
-    width: 100%;
+
+figure.col4 img,
+figure.col6 img {
+	width: 100%;
 }
 
 
