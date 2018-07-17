@@ -67,7 +67,7 @@ header h2 {
 /*BANNER*/
 
 #banner {
-	background-image: url(../photographs/breakfast.jpg);
+	background-image: url(../photographs/hero-phone.jpg);
 	background-repeat: no-repeat;
 	background-color: #fff;
 	height: 200px;
@@ -142,7 +142,21 @@ nav ul li:last-child a {
 	padding: .5em 2%;
 }
 
-
+/*PHOTO STYLING*/
+figure.col4 {
+    width: 48%;
+    margin-left: 2%;
+    float: right;
+}
+figcaption {
+    text-align: center;
+    font-size: .8em;
+    padding: .3em 0;
+    
+}
+figure.col4 img {
+    width: 100%;
+}
 
 
 

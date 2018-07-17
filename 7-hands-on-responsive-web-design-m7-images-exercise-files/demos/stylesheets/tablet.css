@@ -1,10 +1,10 @@
 @media only screen and (min-width: 641px) {
 	/*BANNER*/
 	#banner {
-		background-image: url(../photographs/breakfast.jpg);
+		background-image: url(../photographs/hero-tablet.jpg);
 		background-repeat: no-repeat;
 		background-color: #fff;
-		height: 200px;
+		height: 400px;
 	}
 
 	/*-----NAVIGATION -----*/
@@ -35,6 +35,12 @@
 	.column-9 {
 		width: 75%;
 	}
+/*PHOTO STYLING*/
+figure.col4 {
+    width: 31.333%;
+    
+}
+
 
 
 
