@@ -8,8 +8,18 @@
 	
 	
 /*----- SOCIAL -----*/
-
-
+    header .social {
+        position: absolute;
+        top: 2em;
+        right: 2%;
+    }
+    header .social li {
+        border: none;
+        background-color: transparent;
+    }
+    header .social li {
+        width: 44px;
+    }
 
 
 

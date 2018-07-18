@@ -69,11 +69,39 @@ header a.tel {
 
 
 /*----- SOCIAL -----*/
-
-
-
-
-
+header .social {
+    margin: .75em 0;
+    
+}
+header .social li span {
+    display: none;
+}
+header .social li {
+    width: 25%;
+    float: left;
+    border: 1px solid rgba(255,255,255,.2);
+    background-color: rgba(255,255,255,.1);
+}
+header .social li a {
+    display: block;
+    height: 30px;
+    margin: 2px 0;
+    
+    background-image: url(../images/icons1.png);
+    background-repeat: no-repeat;
+}
+header .social li.facebook a {
+    background-position: center -28px;
+}
+header .social li.pinterest a {
+    background-position: center -86px;
+}
+header .social li.twitter a {
+    background-position: center 1.71px;
+}
+header .social li.plus a {
+    background-position: center -57px;
+}
 
 
 

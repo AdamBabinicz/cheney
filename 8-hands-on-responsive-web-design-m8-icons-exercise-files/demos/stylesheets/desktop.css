@@ -6,11 +6,14 @@
 	header, nav, .row, footer {
 		max-width: 1140px;
 		margin: 0 auto; /*centers everything on the page*/
+        background-color: orange;
 	}
 
 /*-----HEADER -----*/
 
-
+    header {
+        position: relative;
+    }
 
 
 
