@@ -1,19 +1,29 @@
 /*-----Prevents iPhone from resizing in landscape mode -----*/
-html {-webkit-text-size-adjust: none; }
+
+html {
+	-webkit-text-size-adjust: none;
+}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 
 
 
 
 /*-----BODY -----*/
+
 body {
 	background-color: #E6E1D8;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight:300;	/*also loaded 600 for bold*/
+	font-weight: 300;
+	/*also loaded 600 for bold*/
 	color: #494948;
 }
 
@@ -21,6 +31,7 @@ body {
 
 
 /*-----COLOR BAR -----*/
+
 #colorbar {
 	height: 44px;
 	width: 100%;
@@ -32,9 +43,11 @@ body {
 
 
 /*-----HEADER -----*/
+
 #headerWrapper {
 	background-color: #3B4044;
 }
+
 header {
 	padding: 1em 2% .5em 2%;
 }
@@ -43,6 +56,7 @@ header h1 {
 	font-size: 2.1em;
 	color: #fff;
 }
+
 header h2 {
 	font-size: .9em;
 	font-weight: 300;
@@ -52,55 +66,65 @@ header h2 {
 
 
 header a.tel {
-	position: absolute; 
-	top: .4em; 
-	right: 2%; 
-	z-index: 1000; /*makes sure it sits on top of everything else*/
-	font-size:1.4em;
-	font-weight: 600; 
-	color: #FFF!important;  /* necessary to override the default blue link color applied by phones */
-	text-decoration:none;
+	position: absolute;
+	top: .4em;
+	right: 2%;
+	z-index: 1000;
+	/*makes sure it sits on top of everything else*/
+	font-size: 1.4em;
+	font-weight: 600;
+	color: #FFF !important;
+	/* necessary to override the default blue link color applied by phones */
+	text-decoration: none;
 	padding-left: 25px;
-	background-image:url(../images/icon_phone.png);
+	background-image: url(../images/icon_phone.png);
 	background-size: 22px 22px;
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
 
 
 
 /*----- SOCIAL -----*/
+
 header .social {
-    margin: .75em 0;
-    
+	margin: .75em 0;
+
 }
+
 header .social li span {
-    display: none;
+	display: none;
 }
+
 header .social li {
-    width: 25%;
-    float: left;
-    border: 1px solid rgba(255,255,255,.2);
-    background-color: rgba(255,255,255,.1);
+	width: 25%;
+	float: left;
+	border: 1px solid rgba(255, 255, 255, .2);
+	background-color: rgba(255, 255, 255, .1);
 }
+
 header .social li a {
-    display: block;
-    height: 30px;
-    margin: 2px 0;
-    
-    background-image: url(../images/icons1.png);
-    background-repeat: no-repeat;
+	display: block;
+	height: 30px;
+	margin: 2px 0;
+
+	background-image: url(../images/icons1.png);
+	background-repeat: no-repeat;
 }
+
 header .social li.facebook a {
-    background-position: center -28px;
+	background-position: center -28px;
 }
+
 header .social li.pinterest a {
-    background-position: center -86px;
+	background-position: center -86px;
 }
+
 header .social li.twitter a {
-    background-position: center 1.71px;
+	background-position: center 1.71px;
 }
+
 header .social li.plus a {
-    background-position: center -57px;
+	background-position: center -57px;
 }
 
 
@@ -116,66 +140,86 @@ header .social li.plus a {
 
 
 
-/*-----NAVIGATION -----*/	
+/*-----NAVIGATION -----*/
+
 #navWrapper {
-	background-color: #e22121;	
+	background-color: #e22121;
 }
+
 nav ul li {
 	float: left;
-	width: 25%;	
+	width: 25%;
 }
 
 nav ul li a {
 	display: block;
 	font-size: .9em;
-	font-weight:600;
-	color: rgba(255,255,255,0.8);
-	text-decoration:none;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
 	margin: .6em 0;
-	border-right: 3px solid rgba(255,255,255,0.3);
+	border-right: 3px solid rgba(255, 255, 255, 0.3);
 	text-align: center;
-}	
+}
+
 /*this turns off the last border*/
+
 nav ul li:last-child a {
 	border-right: none;
-}	
-nav ul li a:hover{color: rgba(255,255,255,0.9);}
-nav ul li.selected > a {color: rgba(255,255,255,1);} 
-	
-	
-	
-	
+}
+
+nav ul li a:hover {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul li.selected > a {
+	color: rgba(255, 255, 255, 1);
+}
+
+
+
+
 
 /*-----CONTENT -----*/
-#contentWrapper  {
+
+#contentWrapper {
 	background-color: #fff;
 }
+
 #contentWrapper h1 {
-	color:#e22121;
+	color: #e22121;
 	font-size: 2em;
 	padding-top: 1em;
 	text-shadow: 1px 1px 2px #999;
 }
+
 #contentWrapper h2 {
-	color:#e22121;
+	color: #e22121;
 	font-size: 1.25em;
 	padding-top: .75em;
-	font-weight:600;
+	font-weight: 600;
 }
+
 #contentWrapper p {
 	line-height: 140%;
 }
+
 #contentWrapper a {
-	text-decoration:none;
+	text-decoration: none;
 	color: #e22121;
-	font-weight:600;
+	font-weight: 600;
 }
 
 
 
 
 /*----- 12 COLUMN LAYOUT -----*/
-.column-3, .column-4, .column-6, .column-9, .column-12 {
+
+.column-3,
+.column-4,
+.column-6,
+.column-9,
+.column-12 {
 	width: 100%;
 	padding: .5em 2%;
 }
@@ -184,10 +228,12 @@ nav ul li.selected > a {color: rgba(255,255,255,1);}
 
 
 /*----- FORM -----*/
+
 form.signup label {
 	display: block;
 	margin-bottom: .5em;
 }
+
 form.signup .myinput {
 	width: 16em;
 	padding: .5em;
@@ -195,6 +241,7 @@ form.signup .myinput {
 	background-color: #eee;
 	border-radius: 12px;
 }
+
 form.signup .formbutton {
 	background-color: #e22121;
 	border: none;
@@ -202,8 +249,9 @@ form.signup .formbutton {
 	padding: .5em 3em;
 	color: #fff;
 	width: 16em;
-	
-	-webkit-appearance:none; /*removed apple default graident*/
+
+	-webkit-appearance: none;
+	/*removed apple default graident*/
 }
 
 
@@ -215,7 +263,11 @@ form.signup .formbutton {
 
 
 /*----- FOOTER -----*/
-#footerWrapper {background-color: #979791;}
+
+#footerWrapper {
+	background-color: #979791;
+}
+
 footer {
 	clear: both;
 	font-size: .7em;
@@ -223,20 +275,70 @@ footer {
 	text-align: center;
 	padding: .6em;
 }
-footer a {color: #fff;}
+
+footer a {
+	color: #fff;
+}
 
 
 
 /*-------SOCIAL ICONS IN FOOTER --------*/
 
+ul.social2 {
+	width: 200px;
+	margin: 0 auto;
 
+}
 
+ul.social2 li span {
+	display: none;
+}
 
+ul.social2 li a {
+	display: block;
+	background-image: url(../images/icons2.png);
+	width: 44px;
+	height: 44px;
+	margin: 3px;
+	float: left;
+}
 
+ul.social2 li.twitter a {
+	background-position: left 1px;
+}
+
+ul.social2 li.twitter a:hover {
+	background-position: right 1px;
+}
+
+ul.social2 li.facebook a {
+	background-position: left -41.49px;
+}
+
+ul.social2 li.facebook a:hover {
+	background-position: right -41.49px;
+}
+
+ul.social2 li.pinterest a {
+	background-position: left -130px;
+}
+
+ul.social2 li.pinterest a:hover {
+	background-position: right -130px;
+}
+
+ul.social2 li.plus a {
+	background-position: left -85px;
+}
+
+ul.social2 li.plus a:hover {
+	background-position: right -85px;
+}
 
 /*----- OTHER -----*/
+
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
